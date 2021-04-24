@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31129.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Intergalactic.Airways", "Intergalactic.Airways\Intergalactic.Airways.csproj", "{B3A9CA80-6E1A-4490-9FB1-6C9479C1BA6E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Intergalactic.Airways.Common", "..\Intergalactic.Airways\Intergalactic.Airways.Common\Intergalactic.Airways.Common.csproj", "{E97A5E3A-1B28-4755-9657-8B81D6A59F46}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Intergalactic.Airways.Services", "..\Intergalactic.Airways\Intergalactic.Airways.Services\Intergalactic.Airways.Services.csproj", "{306B51B7-6528-41EA-A0FF-972A7B5CA842}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B3A9CA80-6E1A-4490-9FB1-6C9479C1BA6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3A9CA80-6E1A-4490-9FB1-6C9479C1BA6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3A9CA80-6E1A-4490-9FB1-6C9479C1BA6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3A9CA80-6E1A-4490-9FB1-6C9479C1BA6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E97A5E3A-1B28-4755-9657-8B81D6A59F46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E97A5E3A-1B28-4755-9657-8B81D6A59F46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E97A5E3A-1B28-4755-9657-8B81D6A59F46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E97A5E3A-1B28-4755-9657-8B81D6A59F46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{306B51B7-6528-41EA-A0FF-972A7B5CA842}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{306B51B7-6528-41EA-A0FF-972A7B5CA842}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{306B51B7-6528-41EA-A0FF-972A7B5CA842}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{306B51B7-6528-41EA-A0FF-972A7B5CA842}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C5A06CFB-BCD6-47EE-88F2-EA7A3B0764B0}
+	EndGlobalSection
+EndGlobal
