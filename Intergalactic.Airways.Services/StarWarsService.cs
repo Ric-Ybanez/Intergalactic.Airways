@@ -13,7 +13,7 @@ namespace Intergalactic.Airways.Services
         private readonly IStarWarsAPIClient _api;
         public StarWarsService(IStarWarsAPIClient api) => _api = api;
 
-        public async Task<IEnumerable<StarshipPilotResponse>> GetStarshipByPassengersCount(int passengers)
+        public async Task<IEnumerable<StarshipPilotResponse>> GetStarshipsByAllowedPassengersCount(int passengers)
         {
             var starShips = (await GetAllStarships())
                                     .Where(i => int.TryParse(i.Passengers, NumberStyles.AllowThousands, CultureInfo.CurrentCulture.NumberFormat, out int maxPassengers) && maxPassengers >= passengers)
@@ -23,9 +23,9 @@ namespace Intergalactic.Airways.Services
                 return null;
 
             var populatePilotTasks = starShips.Select(PopulatePilotListTask);
+            var starshipWithPilots = await Task.WhenAll(populatePilotTasks);
 
-            var results = await Task.WhenAll(populatePilotTasks);
-            return results.Select(s => new StarshipPilotResponse
+            return starshipWithPilots.Select(s => new StarshipPilotResponse
             {
                 PilotsName = s.PilotList.Select(s => s.Name).ToArray(),
                 StarshipName = s.Name

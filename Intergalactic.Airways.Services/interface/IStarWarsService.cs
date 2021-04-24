@@ -6,6 +6,6 @@ namespace Intergalactic.Airways.Services
 {
     public interface IStarWarsService
     {
-        Task<IEnumerable<StarshipPilotResponse>> GetStarshipByPassengersCount(int passengers);
+        Task<IEnumerable<StarshipPilotResponse>> GetStarshipsByAllowedPassengersCount(int passengers);
     }
 }

@@ -27,7 +27,7 @@ namespace Intergalactic.Airways
             }
 
             Console.WriteLine("Processing....");
-            var starships = await _service.GetStarshipByPassengersCount(passengers);
+            var starships = await _service.GetStarshipsByAllowedPassengersCount(passengers);
 
             if (starships == null) 
             {
